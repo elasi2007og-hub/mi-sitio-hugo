@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on My New Hugo Project</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on My New Hugo Project</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Despliegue de sitios estáticos con Hugo en IAW</title>
+				<link>http://localhost:1313/posts/despliegue-hugo-iaw/</link>
+				<pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/despliegue-hugo-iaw/</guid>
+				<description>&lt;p&gt;En esta segunda entrada repasamos las ventajas de utilizar un generador de sitios estáticos como &lt;strong&gt;Hugo&lt;/strong&gt;: rapidez, plantillas reutilizables con parciales (&lt;code&gt;header.html&lt;/code&gt; y &lt;code&gt;footer.html&lt;/code&gt;) y contenido en Markdown.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hello world — Mi primer post en Hugo</title>
+				<link>http://localhost:1313/posts/hello-world/</link>
+				<pubDate>Tue, 20 Oct 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hello-world/</guid>
+				<description>&lt;p&gt;Esta es mi primera entrada de blog creada con &lt;strong&gt;Hugo&lt;/strong&gt; siguiendo la Lección 6 de Hugo Codex para la práctica &lt;strong&gt;P1.2 de IAW (2º ASIR)&lt;/strong&gt; por &lt;strong&gt;Asier Orgaz Gabriel&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;sobre-mí&#34;&gt;Sobre mí&lt;/h2&gt;&#xA;&lt;p&gt;Puedes ver mis proyectos en mi &lt;a href=&#34;https://github.com/elasi2007og-hub/elasi2007og-hub&#34;&gt;perfil de GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
