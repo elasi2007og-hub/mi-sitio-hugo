@@ -2,24 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>{{ .Title }} | Asier Orgaz Gabriel</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 820px; margin: 0 auto; padding: 20px; color: #1e293b; line-height: 1.5; }
-    header { background: #0f172a; color: #fff; padding: 14px 20px; border-radius: 8px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-    header strong { font-size: 1.1rem; color: #38bdf8; }
-    nav a { color: #f8fafc; text-decoration: none; margin-left: 16px; font-weight: 600; }
-    nav a:hover { color: #38bdf8; text-decoration: underline; }
-    footer { margin-top: 30px; padding-top: 12px; border-top: 2px solid #e2e8f0; color: #64748b; font-size: 0.9rem; }
-    a { color: #2563eb; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="stylesheet" href="{{ "css/estilo.css" | relURL }}">
 </head>
 <body>
-  <header>
-    <strong>🚀 Asier Orgaz Gabriel (2º ASIR - IAW)</strong>
+  <header class="site-header">
+    <div class="brand">
+      <a href="{{ .Site.Home.RelPermalink }}">🚀 Asier Orgaz Gabriel (2º ASIR - IAW)</a>
+      <span>{{ .Site.Params.description }}</span>
+    </div>
     <nav>
-      <a href="/">Inicio</a>
-      <a href="/posts/">Blog</a>
-      <a href="/contact/">Contacto</a>
-      <a href="https://github.com/elasi2007og-hub/elasi2007og-hub">GitHub (P1.1)</a>
+      <a href="{{ .Site.Home.RelPermalink }}">Inicio</a>
+      <a href="{{ "blog/" | relURL }}">Blog</a>
+      <a href="{{ "contact/" | relURL }}">Contacto</a>
+      <a class="github-btn" href="https://github.com/elasi2007og-hub/elasi2007og-hub">GitHub (P1.1)</a>
     </nav>
   </header>
+  <main class="content-card">

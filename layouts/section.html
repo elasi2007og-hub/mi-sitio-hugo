@@ -1,11 +1,12 @@
 {{ partial "header.html" . }}
-    <h1>Posts</h1>
-    <ul>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <ul class="post-list">
     {{ range .RegularPages }}
-        <li>
-            {{ if .Date }}{{ .Date | time.Format ":date_long" }}{{ end }}
+        <li class="post-item">
+            {{ if .Date }}<span class="post-meta">📅 {{ .Date | time.Format ":date_long" }}</span>{{ end }}
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <p>{{ .Summary | plainify }}... <a href="{{ .RelPermalink }}">Read more</a></p>
+            <p>{{ .Summary | plainify }}... <a href="{{ .RelPermalink }}">Leer entrada completa →</a></p>
         </li>
     {{ end }}
     </ul>

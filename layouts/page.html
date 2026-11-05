@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-    {{ if .Date }}<p><em>Publicado el: {{ .Date | time.Format ":date_long" }}</em></p>{{ end }}
+    {{ if .Date }}<div class="post-meta">📅 Publicado el {{ .Date | time.Format ":date_long" }}</div>{{ end }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 {{ partial "footer.html" . }}
