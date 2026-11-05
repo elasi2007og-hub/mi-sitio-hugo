@@ -1,0 +1,188 @@
+/* Hoja de estilos principal - Asier Orgaz Gabriel (2º ASIR - IAW) */
+:root {
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-header: #0f172a;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --accent: #38bdf8;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  line-height: 1.65;
+}
+
+header.site-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 18px 24px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  border-bottom: 3px solid var(--accent);
+}
+
+header.site-header .brand {
+  display: flex;
+  flex-direction: column;
+}
+
+header.site-header .brand a {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+header.site-header .brand span {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+header.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+header.site-header nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+header.site-header nav a:hover {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: var(--accent);
+}
+
+header.site-header nav a.github-btn {
+  background-color: var(--accent);
+  color: #0f172a;
+  font-weight: 700;
+}
+
+header.site-header nav a.github-btn:hover {
+  background-color: #7dd3fc;
+  color: #0f172a;
+}
+
+main.content-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+h1 {
+  color: #0f172a;
+  font-size: 1.85rem;
+  margin-top: 0;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #1e293b;
+  font-size: 1.35rem;
+  margin-top: 24px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+code {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.post-meta {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: grid;
+  gap: 16px;
+}
+
+.post-item {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  padding: 16px 20px;
+  background: #fafaf9;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.post-item h2 {
+  margin: 6px 0 8px 0;
+  font-size: 1.25rem;
+}
+
+.post-item p {
+  margin: 0;
+  color: #475569;
+}
+
+footer.site-footer {
+  margin-top: 32px;
+  padding: 18px 8px;
+  border-top: 2px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}

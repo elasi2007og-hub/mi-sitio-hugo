@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blog de Implantación de Aplicaciones Web (IAW) on Mi sitio web práctico — Asier Orgaz Gabriel</title>
+		<link>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/</link>
+		<description>Recent content in Blog de Implantación de Aplicaciones Web (IAW) on Mi sitio web práctico — Asier Orgaz Gabriel</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 05 Nov 2026 18:45:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Publicando nuestro sitio Hugo en GitHub Pages</title>
+				<link>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/publicar-hugo-github-pages/</link>
+				<pubDate>Thu, 05 Nov 2026 18:45:00 +0000</pubDate>
+				<guid>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/publicar-hugo-github-pages/</guid>
+				<description>&lt;p&gt;En esta práctica desplegamos nuestro sitio estático de &lt;strong&gt;Hugo&lt;/strong&gt; en Internet a través de &lt;strong&gt;GitHub Pages&lt;/strong&gt; siguiendo la filosofía &lt;strong&gt;KISS&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Configuramos &lt;code&gt;baseURL = &amp;quot;https://elasi2007og-hub.github.io/mi-sitio-hugo/&amp;quot;&lt;/code&gt; y &lt;code&gt;publishDir = &amp;quot;.&amp;quot;&lt;/code&gt; en &lt;code&gt;hugo.toml&lt;/code&gt; para generar el HTML plano directamente en la raíz del repositorio.&lt;/li&gt;&#xA;&lt;li&gt;Añadimos &lt;code&gt;static/.nojekyll&lt;/code&gt; para evitar que GitHub procese el repositorio con Jekyll.&lt;/li&gt;&#xA;&lt;li&gt;Utilizamos la función &lt;code&gt;relURL&lt;/code&gt; de Hugo en &lt;code&gt;layouts/partials/header.html&lt;/code&gt; para que la hoja de estilos (&lt;code&gt;css/estilo.css&lt;/code&gt;) y el menú de navegación resuelvan correctamente bajo la subruta &lt;code&gt;/mi-sitio-hugo/&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Puedes consultar el código fuente y el sitio compilado en mi &lt;a href=&#34;https://github.com/elasi2007og-hub/mi-sitio-hugo&#34;&gt;repositorio de GitHub&lt;/a&gt; y visitar mi &lt;a href=&#34;https://github.com/elasi2007og-hub/elasi2007og-hub&#34;&gt;perfil de GitHub (P1.1)&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Despliegue de sitios estáticos con Hugo en IAW</title>
+				<link>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/despliegue-hugo-iaw/</link>
+				<pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>
+				<guid>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/despliegue-hugo-iaw/</guid>
+				<description>&lt;p&gt;En esta entrada repasamos las ventajas de utilizar un generador de sitios estáticos como &lt;strong&gt;Hugo&lt;/strong&gt; en el módulo de &lt;strong&gt;Implantación de Aplicaciones Web (IAW)&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Velocidad y seguridad:&lt;/strong&gt; al compilar a HTML y CSS puros, no requiere base de datos ni ejecución de código dinámico en el servidor.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Plantillas modulares:&lt;/strong&gt; gracias a los parciales (&lt;code&gt;layouts/partials/header.html&lt;/code&gt; y &lt;code&gt;footer.html&lt;/code&gt;), mantenemos una cabecera y pie de página consistentes en todas las secciones.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Control de versiones con Git:&lt;/strong&gt; tanto el código fuente en Markdown como el sitio estático generado quedan versionados en &lt;a href=&#34;https://github.com/elasi2007og-hub/elasi2007og-hub&#34;&gt;GitHub&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Hello world — Mi primer post en Hugo</title>
+				<link>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/hello-world/</link>
+				<pubDate>Tue, 20 Oct 2026 10:00:00 +0000</pubDate>
+				<guid>https://elasi2007og-hub.github.io/mi-sitio-hugo/blog/hello-world/</guid>
+				<description>&lt;p&gt;Esta es mi primera entrada de blog creada con &lt;strong&gt;Hugo&lt;/strong&gt; siguiendo las lecciones de Hugo Codex para la práctica &lt;strong&gt;P1.2 de IAW (2º ASIR)&lt;/strong&gt; por &lt;strong&gt;Asier Orgaz Gabriel&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;sobre-mí&#34;&gt;Sobre mí&lt;/h2&gt;&#xA;&lt;p&gt;Puedes ver mis proyectos y mi presentación en mi &lt;a href=&#34;https://github.com/elasi2007og-hub/elasi2007og-hub&#34;&gt;perfil de GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

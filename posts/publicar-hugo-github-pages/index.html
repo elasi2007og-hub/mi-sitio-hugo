@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web práctico — Asier Orgaz Gabriel</title>
+  <meta name="description" content="Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)">
+  <link rel="stylesheet" href="/mi-sitio-hugo/css/estilo.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="/mi-sitio-hugo/">🚀 Asier Orgaz Gabriel (2º ASIR - IAW)</a>
+      <span>Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)</span>
+    </div>
+    <nav>
+      <a href="/mi-sitio-hugo/">Inicio</a>
+      <a href="/mi-sitio-hugo/blog/">Blog</a>
+      <a href="/mi-sitio-hugo/contact/">Contacto</a>
+      <a class="github-btn" href="https://github.com/elasi2007og-hub/elasi2007og-hub">GitHub (P1.1)</a>
+    </nav>
+  </header>
+  <main class="content-card">
+
+    <div class="post-meta">📅 Publicado el 5 de noviembre de 2026</div>
+    <h1>Publicando nuestro sitio Hugo en GitHub Pages</h1>
+    <p>En esta práctica desplegamos nuestro sitio estático de <strong>Hugo</strong> en Internet a través de <strong>GitHub Pages</strong> siguiendo la filosofía <strong>KISS</strong>:</p>
+<ul>
+<li>Configuramos <code>baseURL = &quot;https://elasi2007og-hub.github.io/mi-sitio-hugo/&quot;</code> y <code>publishDir = &quot;.&quot;</code> en <code>hugo.toml</code> para generar el HTML plano directamente en la raíz del repositorio.</li>
+<li>Añadimos <code>static/.nojekyll</code> para evitar que GitHub procese el repositorio con Jekyll.</li>
+<li>Utilizamos la función <code>relURL</code> de Hugo en <code>layouts/partials/header.html</code> para que la hoja de estilos (<code>css/estilo.css</code>) y el menú de navegación resuelvan correctamente bajo la subruta <code>/mi-sitio-hugo/</code>.</li>
+</ul>
+<p>Puedes consultar el código fuente y el sitio compilado en mi <a href="https://github.com/elasi2007og-hub/mi-sitio-hugo">repositorio de GitHub</a> y visitar mi <a href="https://github.com/elasi2007og-hub/elasi2007og-hub">perfil de GitHub (P1.1)</a>.</p>
+
+  </main>
+  <footer class="site-footer">
+    <span>© 2026 Asier Orgaz Gabriel — 2º ASIR (IAW) · Publicado con Hugo y GitHub Pages</span>
+    <span><a href="https://github.com/elasi2007og-hub/mi-sitio-hugo">Repositorio en GitHub</a> · <a href="https://github.com/elasi2007og-hub/elasi2007og-hub">Perfil P1.1</a></span>
+  </footer>
+</body>
+</html>
+

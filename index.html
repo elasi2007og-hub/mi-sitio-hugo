@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web práctico — Asier Orgaz Gabriel</title>
+  <meta name="description" content="Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)">
+  <link rel="stylesheet" href="/mi-sitio-hugo/css/estilo.css">
+	<meta name="generator" content="Hugo 0.169.0">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="/mi-sitio-hugo/">🚀 Asier Orgaz Gabriel (2º ASIR - IAW)</a>
+      <span>Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)</span>
+    </div>
+    <nav>
+      <a href="/mi-sitio-hugo/">Inicio</a>
+      <a href="/mi-sitio-hugo/blog/">Blog</a>
+      <a href="/mi-sitio-hugo/contact/">Contacto</a>
+      <a class="github-btn" href="https://github.com/elasi2007og-hub/elasi2007og-hub">GitHub (P1.1)</a>
+    </nav>
+  </header>
+  <main class="content-card">
+
+<h1>Portal Web de Asier Orgaz Gabriel — 2º ASIR (IAW)</h1>
+<p>¡Hola! Bienvenido a mi sitio web estático desarrollado con <strong>Hugo</strong> y desplegado en <strong>GitHub Pages</strong> para el módulo de <strong>Implantación de Aplicaciones Web (IAW)</strong> de <strong>2º ASIR</strong>.</p>
+<p>En este proyecto aplico el flujo completo de publicación de sitios estáticos en producción:</p>
+<ol>
+<li><strong>Edición de contenido y plantillas:</strong> Contenido escrito en Markdown (<code>content/</code>) separado de la estructura HTML (<code>layouts/</code>) y los parciales reutilizables (<code>layouts/partials/header.html</code> y <code>footer.html</code>).</li>
+<li><strong>Rutas adaptadas a subruta (<code>relURL</code>):</strong> Uso de <code>{{ &quot;css/estilo.css&quot; | relURL }}</code> y <code>{{ .Site.Home.RelPermalink }}</code> para que todos los estilos y enlaces funcionen correctamente bajo <code>https://elasi2007og-hub.github.io/mi-sitio-hugo/</code>.</li>
+<li><strong>Generación en la raíz (<code>publishDir = &quot;.&quot;</code>):</strong> Construcción del HTML plano mediante el comando <code>hugo</code> en la raíz del repositorio junto al fichero <code>.nojekyll</code>.</li>
+</ol>
+<h2 id="secciones-disponibles">Secciones disponibles</h2>
+<ul>
+<li><strong><a href="blog/">Blog técnico</a>:</strong> Artículos sobre la creación del sitio con Hugo (P1.2) y su puesta en producción con GitHub Pages.</li>
+<li><strong><a href="contact/">Página de contacto</a>:</strong> Datos de contacto académico y enlaces directos a mis repositorios.</li>
+</ul>
+<h2 id="sobre-mí">Sobre mí</h2>
+<p>Soy <strong>Asier Orgaz Gabriel</strong>, estudiante de <strong>2º de Administración de Sistemas Informáticos en Red (ASIR)</strong>. Puedes consultar mi perfil y mi presentación de la práctica <strong>P1.1</strong> en mi <a href="https://github.com/elasi2007og-hub/elasi2007og-hub">perfil de GitHub (<code>elasi2007og-hub</code>)</a>.</p>
+
+  </main>
+  <footer class="site-footer">
+    <span>© 2026 Asier Orgaz Gabriel — 2º ASIR (IAW) · Publicado con Hugo y GitHub Pages</span>
+    <span><a href="https://github.com/elasi2007og-hub/mi-sitio-hugo">Repositorio en GitHub</a> · <a href="https://github.com/elasi2007og-hub/elasi2007og-hub">Perfil P1.1</a></span>
+  </footer>
+</body>
+</html>
+
