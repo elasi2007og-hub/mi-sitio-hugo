@@ -1,10 +1,38 @@
-# Práctica P1.2 (IAW) — Tu mini sitio web de la mano de Hugo
+# PrácticaX2 y P1.2 (IAW) — Publicar tu sitio Hugo con GitHub Pages
 
 - **Alumno:** Asier Orgaz Gabriel
 - **Módulo:** Implantación de Aplicaciones Web (IAW) — 2º ASIR
-- **Máquina Virtual:** Ubuntu Desktop (VirtualBox) — Usuario: `asier`
+- **URL pública en GitHub Pages:** [https://elasi2007og-hub.github.io/mi-sitio-hugo/](https://elasi2007og-hub.github.io/mi-sitio-hugo/)
+- **Repositorio GitHub (fuente Hugo + HTML en raíz):** [https://github.com/elasi2007og-hub/mi-sitio-hugo](https://github.com/elasi2007og-hub/mi-sitio-hugo)
 - **Perfil de GitHub (P1.1 enlazado):** [https://github.com/elasi2007og-hub/elasi2007og-hub](https://github.com/elasi2007og-hub/elasi2007og-hub)
-- **Repositorio del Mini Sitio Hugo (P1.2):** [https://github.com/elasi2007og-hub/mi-sitio-hugo](https://github.com/elasi2007og-hub/mi-sitio-hugo) *(y carpeta [`mi-sitio/`](https://github.com/elasi2007og-hub/elasi2007og-hub/tree/main/mi-sitio) en el repo de perfil)*
+
+---
+
+## Despliegue en GitHub Pages (PrácticaX2)
+
+### Configuración aplicada en `hugo.toml`
+```toml
+baseURL = "https://elasi2007og-hub.github.io/mi-sitio-hugo/"
+languageCode = "es"
+title = "Mi sitio web práctico — Asier Orgaz Gabriel"
+description = "Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)"
+publishDir = "."
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)"
+  author = "Asier Orgaz Gabriel"
+  github = "https://github.com/elasi2007og-hub/elasi2007og-hub"
+```
+
+### Flujo de publicación ejecutado
+1. Creación de `static/.nojekyll` para servir el HTML plano directamente sin procesamiento Jekyll.
+2. Uso de `relURL` y `.Site.Home.RelPermalink` en `layouts/partials/header.html` para cargar `css/estilo.css` y las rutas de navegación bajo `/mi-sitio-hugo/`.
+3. Personalización de `<title>{{ .Site.Title }}</title>` y `<meta name="description" content="{{ .Site.Params.description }}">`.
+4. Compilación en la raíz del repositorio mediante `hugo` (`publishDir = "."`) con todas las páginas en `draft: false`.
+5. Activación de **GitHub Pages** en `Settings → Pages` con `Deploy from a branch: main` y carpeta `/ (root)`.
+
+![Configuración de GitHub Pages](capturas/09_github_pages_settings.png)
 
 ---
 
