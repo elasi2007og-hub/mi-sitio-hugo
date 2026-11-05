@@ -1,0 +1,11 @@
+baseURL = "https://elasi2007og-hub.github.io/mi-sitio-hugo/"
+languageCode = "es"
+title = "Mi sitio web práctico — Asier Orgaz Gabriel"
+description = "Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)"
+publishDir = "."
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Ejercicio de publicación con Hugo y GitHub Pages para Implantación de Aplicaciones Web (2º ASIR)"
+  author = "Asier Orgaz Gabriel"
+  github = "https://github.com/elasi2007og-hub/elasi2007og-hub"
